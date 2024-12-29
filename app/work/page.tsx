@@ -22,44 +22,29 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Container from "@/components/Container";
-import projectOne from "@/images/projectOne.png";
-import projectTwo from "@/images/projectTwo.png";
-import projectThree from "@/images/projectThree.png";
+import projectOne from "@/public/assets/projects/doctor-patient.png";
 
 // Dummy data for projects
 const projects = [
   {
     id: "01",
-    title: "E-commerce Platform",
+    title:
+      "Secure and Modern Healthcare Appointment App with Real-Time Notifications",
     category: "Full Stack",
     description:
-      "A modern e-commerce platform built with Next.js, featuring a responsive design, user authentication, and integration with a headless CMS for easy content management.",
-    stack: ["Next.js", "Tailwind CSS", "Strapi", "PostgreSQL"],
+      "A robust and responsive Doctor & Patient Appointment Platform built with Node.js, Express.js, and MongoDB Atlas. Features include secure authentication, real-time notifications, and seamless scheduling. Powered by React and styled with Tailwind CSS, it delivers a sleek user experience. Deployed on Vercel, ensuring scalability and reliability.",
+    stack: [
+      "React",
+      "Node.js",
+      "Vercel",
+      "Github",
+      "Express.js",
+      "MongoDB Atlas",
+      "Tailwind CSS",
+    ],
     image: projectOne,
-    liveUrl: "https://example-ecommerce.com",
-    githubUrl: "https://github.com/example/ecommerce",
-  },
-  {
-    id: "02",
-    title: "Task Management App",
-    category: "Frontend",
-    description:
-      "A sleek task management application that helps users organize their daily activities, set priorities, and track progress. Built with React and Redux for state management.",
-    stack: ["React", "Redux", "Styled Components", "Firebase"],
-    image: projectTwo,
-    liveUrl: "https://example-taskmanager.com",
-    githubUrl: "https://github.com/example/taskmanager",
-  },
-  {
-    id: "03",
-    title: "Weather Forecast Dashboard",
-    category: "Frontend",
-    description:
-      "An interactive weather forecast dashboard that provides real-time weather information and 5-day forecasts for multiple locations. Utilizes a third-party weather API.",
-    stack: ["Vue.js", "Vuex", "Chart.js", "OpenWeatherMap API"],
-    image: projectThree,
-    liveUrl: "https://example-weatherapp.com",
-    githubUrl: "https://github.com/example/weatherapp",
+    liveUrl: "https://docter-appointment-app-frontend.vercel.app",
+    githubUrl: "https://github.com/foxlancerr/docter-appointment-app",
   },
 ];
 
@@ -101,20 +86,20 @@ export default function ProjectSlider() {
                     <div className="flex flex-col md:flex-row md:items-center md:space-x-8">
                       <div className="w-full md:w-1/2 order-2 md:order-1 mb-8 md:mb-0">
                         <div className="space-y-3 md:space-y-6 mt-4 md:mt-0">
-                          <h2 className="text-4xl md:text-8xl leading-none font-extrabold text-transparent text-outline">
+                          <h2 className="text-3xl md:text-8xl leading-none font-extrabold text-transparent text-outline">
                             {project?.id}
                           </h2>
                           <h3 className="text-xl md:text-3xl font-bold leading-none text-white group-hover:text-lightSky hoverEffect">
-                            {project?.category} project
+                            {project?.title}
                           </h3>
                           <p className="text-white/60 text-sm md:text-base leading-6 md:leading-normal">
                             {project?.description}
                           </p>
-                          <ul className="flex flex-wrap md:flex-nowrap gap-2 md:gap-4 items-center">
+                          <ul className="flex flex-wrap  gap-2 md:gap-4 items-center">
                             {project?.stack?.map((item, index) => (
                               <li
                                 key={index}
-                                className="text-xs md:text-base text-lightSky"
+                                className="text-xs md:text-sm text-lightSky"
                               >
                                 {item}
                                 {index !== project?.stack?.length - 1 && ","}
@@ -126,7 +111,7 @@ export default function ProjectSlider() {
                             <TooltipProvider>
                               <Tooltip>
                                 <TooltipTrigger asChild>
-                                  <Link href={project.liveUrl}>
+                                  <Link href={project.liveUrl} target="_blank">
                                     <Button
                                       variant="outline"
                                       size="icon"
@@ -147,7 +132,10 @@ export default function ProjectSlider() {
                             <TooltipProvider>
                               <Tooltip>
                                 <TooltipTrigger asChild>
-                                  <Link href={project.githubUrl}>
+                                  <Link
+                                    href={project.githubUrl}
+                                    target="_blank"
+                                  >
                                     <Button
                                       variant="outline"
                                       size="icon"
@@ -174,7 +162,7 @@ export default function ProjectSlider() {
                             src={project.image}
                             alt={project.title}
                             fill
-                            className="object-cover"
+                            className="object-cover object-left "
                           />
                         </div>
                       </div>

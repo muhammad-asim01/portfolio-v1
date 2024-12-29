@@ -17,7 +17,7 @@ const ServicesPage = () => {
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
         >
-          <Title>Services I Provide</Title>
+          <Title>What Service I Provide it.</Title>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-12">
             {servicesData?.map((item) => (
               <div

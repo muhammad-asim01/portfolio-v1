@@ -6,36 +6,11 @@ import Statistics from "@/components/Statistics";
 import Title from "@/components/Title";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { infoAboutMe } from "@/constants";
 import { Download, Languages } from "lucide-react";
 
 export default function Home() {
-  const infoAboutMe = {
-    languages: {
-      title: "Languages & Technologies",
-      items: [
-        "NodeJS", 
-        "NextJS", 
-        "Typescript", 
-        "ReactJS", 
-        "Python", 
-        "Solidity", 
-        "MongoDB", 
-        "PostgreSQL", 
-        "Redux Toolkit", 
-        "ExpressJS"
-      ],
-    },
-    skills: {
-      title: "Skills",
-      items: [
-        "NFT Specialist",
-        "Problem Solving",
-        "Blockchain Development",
-        "Full Stack MERN Development",
-        "OOP (Object-Oriented Programming)",
-      ],
-    },
-  };
+  
   
 
   return (
