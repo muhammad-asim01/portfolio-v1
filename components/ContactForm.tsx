@@ -14,6 +14,7 @@ import {
 } from "./ui/select";
 import SuccessMsg from "./SuccessMsg";
 import { useToast } from "@/hooks/use-toast";
+import { servicesSelectItems } from "@/constants";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -104,11 +105,11 @@ const ContactForm = () => {
   return (
     <form className="space-y-4">
       <h3 className="text-2xl md:text-4xl text-lightSky">
-        Let&apos;s work together
+        Let's Build Something Great Together!
       </h3>
       <p className="text-white/60 text-sm md:text-base">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit
-        vel saepe fugiat ex aperiam, totam quae et tenetur deleniti.
+        Ready to turn ideas into reality? Contact us today to start your journey
+        toward success!
       </p>
       <>
         {success ? (
@@ -170,9 +171,11 @@ const ContactForm = () => {
                 <SelectContent className="bg-bodyColor text-white border-white/20">
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    {servicesSelectItems.map((item) => {
+                      return (
+                        <SelectItem value={item.value} className="cursor-pointer">{item.label}</SelectItem>
+                      );
+                    })}
                   </SelectGroup>
                 </SelectContent>
               </Select>

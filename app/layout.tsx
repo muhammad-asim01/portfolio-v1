@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: "Muhammad Asim. | Software Engineer & Nft Specialist",
   description:
-    "Muhammad Asim is a Software Engineer, NFT Specialist, and Blockchain Developer. He is currently working as a ReactJS Developer at AAK, TeleScience. Inc, Callifornia USA.",
+    "Bringing a dynamic blend of innovation and expertise, I am Muhammad Asim, a seasoned FullStack MERN (MongoDB, Express, React, Node.js, Typescript) and Blockchain Developer. With 2 years of hands-on experience, I am currently excelling in my role as ReactJS Developer at AAK, TeleScience. Inc, Callifornia USA.",
 };
 
 export default function RootLayout({
@@ -41,7 +41,7 @@ export default function RootLayout({
         <title> Muhammad Asim. | Software Engineer & Nft Specialist</title>
         <meta
           name="description"
-          content="Muhammad Asim is a Software Engineer, NFT Specialist, and Blockchain Developer. He is currently working as a ReactJS Developer at AAK, TeleScience. Inc, Callifornia USA."
+          content="Bringing a dynamic blend of innovation and expertise, I am Muhammad Asim, a seasoned FullStack MERN (MongoDB, Express, React, Node.js, Typescript) and Blockchain Developer. With 2 years of hands-on experience, I am currently excelling in my role as ReactJS Developer at AAK, TeleScience. Inc, Callifornia USA."
         />
         <meta
           name="keywords"
@@ -58,7 +58,7 @@ export default function RootLayout({
         />
         <meta
           property="og:description"
-          content="Muhammad Asim. is a Software Engineer, NFT Specialist, and Blockchain Developer. He is currently working as a ReactJS Developer at AAK, TeleScience. Inc, Callifornia USA."
+          content="Bringing a dynamic blend of innovation and expertise, I am Muhammad Asim, a seasoned FullStack MERN (MongoDB, Express, React, Node.js, Typescript) and Blockchain Developer. With 2 years of hands-on experience, I am currently excelling in my role as ReactJS Developer at AAK, TeleScience. Inc, Callifornia USA."
         />
         <meta property="og:image" content="/public/assets/profile.png" />
         <meta property="og:url" content="https://www.muhammadasim.dev" />
@@ -73,7 +73,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:description"
-          content="Muhammad Asim. is a Software Engineer, NFT Specialist, and Blockchain Developer. He is currently working as a ReactJS Developer at AAK, TeleScience. Inc, Callifornia USA."
+          content="Bringing a dynamic blend of innovation and expertise, I am Muhammad Asim, a seasoned FullStack MERN (MongoDB, Express, React, Node.js, Typescript) and Blockchain Developer. With 2 years of hands-on experience, I am currently excelling in my role as ReactJS Developer at AAK, TeleScience. Inc, Callifornia USA."
         />
         <meta name="twitter:image" content="/public/assets/profile.png" />
         <meta name="twitter:card" content="summary_large_image" />

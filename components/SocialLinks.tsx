@@ -11,7 +11,7 @@ const socialData = [
   {
     title: "Linkedin",
     icon: <Linkedin width={20} height={20} />,
-    link: "https://www.linkedin.com/in/foxlancerr/",
+    link: "https://www.linkedin.com/in/foxlancerr",
   },
 ];
 
